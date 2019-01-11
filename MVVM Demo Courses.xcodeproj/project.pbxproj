@@ -8,12 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		232092BC21E772B600EBC3A1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232092BB21E772B600EBC3A1 /* AppDelegate.swift */; };
-		232092BE21E772B600EBC3A1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232092BD21E772B600EBC3A1 /* ViewController.swift */; };
 		232092C121E772B600EBC3A1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 232092BF21E772B600EBC3A1 /* Main.storyboard */; };
 		232092C321E772B900EBC3A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 232092C221E772B900EBC3A1 /* Assets.xcassets */; };
 		232092C621E772B900EBC3A1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 232092C421E772B900EBC3A1 /* LaunchScreen.storyboard */; };
 		232092D121E772B900EBC3A1 /* MVVM_Demo_CoursesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232092D021E772B900EBC3A1 /* MVVM_Demo_CoursesTests.swift */; };
 		232092DC21E772B900EBC3A1 /* MVVM_Demo_CoursesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232092DB21E772B900EBC3A1 /* MVVM_Demo_CoursesUITests.swift */; };
+		232092EE21E775AC00EBC3A1 /* CoursesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232092ED21E775AC00EBC3A1 /* CoursesViewModel.swift */; };
+		232092F021E776F700EBC3A1 /* CoursesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232092EF21E776F700EBC3A1 /* CoursesTableViewController.swift */; };
+		232092F221E7838800EBC3A1 /* CourseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232092F121E7838800EBC3A1 /* CourseTableViewCell.swift */; };
+		232092F621E7849000EBC3A1 /* Institute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232092F521E7849000EBC3A1 /* Institute.swift */; };
+		232092F821E7884700EBC3A1 /* CourseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232092F721E7884700EBC3A1 /* CourseViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +40,6 @@
 /* Begin PBXFileReference section */
 		232092B821E772B600EBC3A1 /* MVVM Demo Courses.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MVVM Demo Courses.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		232092BB21E772B600EBC3A1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		232092BD21E772B600EBC3A1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		232092C021E772B600EBC3A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		232092C221E772B900EBC3A1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		232092C521E772B900EBC3A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +50,11 @@
 		232092D721E772B900EBC3A1 /* MVVM Demo CoursesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MVVM Demo CoursesUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		232092DB21E772B900EBC3A1 /* MVVM_Demo_CoursesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVM_Demo_CoursesUITests.swift; sourceTree = "<group>"; };
 		232092DD21E772B900EBC3A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		232092ED21E775AC00EBC3A1 /* CoursesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursesViewModel.swift; sourceTree = "<group>"; };
+		232092EF21E776F700EBC3A1 /* CoursesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursesTableViewController.swift; sourceTree = "<group>"; };
+		232092F121E7838800EBC3A1 /* CourseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseTableViewCell.swift; sourceTree = "<group>"; };
+		232092F521E7849000EBC3A1 /* Institute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Institute.swift; sourceTree = "<group>"; };
+		232092F721E7884700EBC3A1 /* CourseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,11 +106,12 @@
 			isa = PBXGroup;
 			children = (
 				232092BB21E772B600EBC3A1 /* AppDelegate.swift */,
-				232092BD21E772B600EBC3A1 /* ViewController.swift */,
-				232092BF21E772B600EBC3A1 /* Main.storyboard */,
 				232092C221E772B900EBC3A1 /* Assets.xcassets */,
 				232092C421E772B900EBC3A1 /* LaunchScreen.storyboard */,
 				232092C721E772B900EBC3A1 /* Info.plist */,
+				232092EC21E7734B00EBC3A1 /* View Models */,
+				232092EA21E7732E00EBC3A1 /* Views */,
+				232092E921E7731800EBC3A1 /* Models */,
 			);
 			path = "MVVM Demo Courses";
 			sourceTree = "<group>";
@@ -123,6 +132,33 @@
 				232092DD21E772B900EBC3A1 /* Info.plist */,
 			);
 			path = "MVVM Demo CoursesUITests";
+			sourceTree = "<group>";
+		};
+		232092E921E7731800EBC3A1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				232092F521E7849000EBC3A1 /* Institute.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		232092EA21E7732E00EBC3A1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				232092BF21E772B600EBC3A1 /* Main.storyboard */,
+				232092EF21E776F700EBC3A1 /* CoursesTableViewController.swift */,
+				232092F121E7838800EBC3A1 /* CourseTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		232092EC21E7734B00EBC3A1 /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				232092ED21E775AC00EBC3A1 /* CoursesViewModel.swift */,
+				232092F721E7884700EBC3A1 /* CourseViewModel.swift */,
+			);
+			path = "View Models";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,8 +292,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				232092BE21E772B600EBC3A1 /* ViewController.swift in Sources */,
+				232092F621E7849000EBC3A1 /* Institute.swift in Sources */,
+				232092F221E7838800EBC3A1 /* CourseTableViewCell.swift in Sources */,
 				232092BC21E772B600EBC3A1 /* AppDelegate.swift in Sources */,
+				232092F821E7884700EBC3A1 /* CourseViewModel.swift in Sources */,
+				232092F021E776F700EBC3A1 /* CoursesTableViewController.swift in Sources */,
+				232092EE21E775AC00EBC3A1 /* CoursesViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
