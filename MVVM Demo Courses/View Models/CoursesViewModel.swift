@@ -7,7 +7,7 @@
 //
 
 import Foundation
-
+//Commit
 class CoursesViewModel: NSObject {
     let title = "Courses"
     var coursesModels : [CourseViewModel] = []
